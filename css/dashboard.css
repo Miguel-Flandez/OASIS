@@ -1,0 +1,180 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+#logo{
+    margin-top: 5px;
+}
+header h3{
+    font-weight: normal;
+}
+#page{
+    position: relative;
+    left: -50px
+}
+#page:hover, i:hover{
+    cursor: pointer;
+}
+#logo{
+    width: 20%;
+    float: left;
+    margin-right: 5px;
+}
+
+
+
+
+#sidebar{
+    margin-top: 0.5px;
+    float: left;
+    border: 2px solid black;
+    height: 91%;
+    position: absolute;
+    left: 0;
+
+}
+#sidebar-top button{
+    text-align: left;
+    font-size: large;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    
+    width: 100%;
+
+    background-color: white;
+}
+#sidebar-bottom button{
+    text-align: left;
+    font-size: large;
+
+    border: none;
+    border-top: 2px solid black;
+    padding: 10px;
+
+    width: 100%;
+
+    background-color: white;
+
+    position: absolute;
+    bottom: 0;
+}
+#sidebar button:hover{
+    color: green;
+}
+#sidebar button:active{
+    background-color: ivory;
+}
+@media(max-width: 1000px){
+    #sidebar{
+        display: none;
+    }
+}
+
+
+#student-info , #grades{
+    width: 1000px;
+    margin: 50px auto;
+    border: 2px solid black;
+    height: 40%;
+}
+#dpandinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#dp{
+    width: 20%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+#student-info p, #grades p{
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin:auto 10px;
+}
+#form-pair input{
+    border: none;
+}
+#student-number{
+    border: 1px solid black !important;
+    border-radius: 20px;
+}
+#name, #gender, #latest-enrollment{
+    pointer-events: none;
+}
+
+#idfk{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+#payor-info{
+    width: 1000px;
+    margin: 20px auto;
+    border-bottom: 2px solid black;
+    height: 40%;
+}
+
+#forms{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px
+}
+
+#tuition-fees{
+    width: 1000px;
+    margin: 20px auto;
+    height: 40%;
+}
+#tuition-table{
+    width: 1000px;
+}
+#tuition-table, #tuition-table th, #tuition-table td{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 12px;
+}
+
+#pay-button{
+    display: block;
+    margin: auto;
+    border:2px solid black;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 12px;
+    background-color: white;
+}
+#pay-button:hover{
+    color: green;
+}

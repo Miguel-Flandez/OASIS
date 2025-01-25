@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de323b5912.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div id="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYmHnuqhvzZw5T0-62u8reDZpitWgwdyZcA&s" alt="Oakwood" id="logo">
+            <h3>OASIS</h3>
+        </div>
+        
+        <h3 id="page">Online Payment Center</h3>
+        <i class="fa-solid fa-bell"></i>
+    </header>
+
+    <div id="sidebar">
+        <div id="sidebar-top">
+        <button id="home-button">Home</button>
+        <button id="opc-button">Online Payment Center</button>
+        <button id="studet-info-button">Student Information</button>
+        <button id="profile-button">User Profile</button>
+        
+        </div>
+
+        <div id="sidebar-bottom">
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+
+    <div id="payor-infoAndfees">
+        <div id="payor-info">
+            <h3>Payor Information</h3>
+            <div id="forms">
+                <div id="form-pair">
+                <label for="student-number">Student Number: </label>
+                <input type="text" name ='student-number' id="student-number" placeholder="2021-12345">
+                </div>
+
+                <div id="form-pair">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name">
+                </div>
+            </div>
+        </div>
+
+        <div id="tuition-fees">
+            <h3>Current Tuition Fees</h3>
+            <table id="tuition-table">
+                <thead>
+                <tr>
+                    <th id="no-border"></th>
+                    <th>Quarter</th>
+                    <th>Due Date</th>
+                    <th>Amount to Pay</th>
+                </tr>
+                </thead>
+                <tbody>
+                <div id="fee-input">
+                <td id="no-border"><input type="checkbox"></td>
+                <td>.innerHTML or .innerText dito yung mga info pag may back end na</td>
+                <td>same</td>
+                <td>same</td>
+                </div>
+                </tbody>
+            </table>
+            <button id="pay-button">Proceed to Payment</button>
+        </div>
+    </div>
+    
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

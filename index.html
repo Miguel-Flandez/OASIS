@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de323b5912.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div id="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYmHnuqhvzZw5T0-62u8reDZpitWgwdyZcA&s" alt="Oakwood" id="logo">
+            <h3>OASIS</h3>
+        </div>
+        
+        <h3 id="page">Home</h3>
+        <i class="fa-solid fa-bell"></i>
+    </header>
+
+    <div id="sidebar">
+        <div id="sidebar-top">
+        <button id="home-button">Home</button>
+        <button id="opc-button">Online Payment Center</button>
+        <button id="studet-info-button">Student Information</button>
+        <button id="profile-button">User Profile</button>
+        
+        </div>
+
+        <div id="sidebar-bottom">
+            <button id="logout">Logout</button>
+        </div>
+        
+    </div>
+
+    <div id="homescreen">   
+        <div id="student-info">
+            <p>Basic Student Information //.innerHTML or innerText dito yung data pag may back end na</p>
+
+            <div id="dpandinfo">
+            
+        
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="dp" id="dp">
+
+                <div id="info">
+                    <div id="form-pair">
+                        <label for="student-number">Student Number: </label>
+                        <input type="text" name="student-number" id="student-number" placeholder="2021-12345">
+                    </div>
+                    
+                    <div id="form-pair">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name">
+                    </div>
+                    
+                    <div id="form-pair">
+                        <label for="gender">Gender: </label>
+                        <input type="text" id="gender">
+                    </div>
+                    
+                    <div id="form-pair">
+                        <label for="latest-enrollment">Latest Enrollment</label>
+                        <input type="text" id="latest-enrollment">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="grades">
+            <p>Grades</p>
+            <div id="grade-date">
+                <h1 id="idfk">
+                BRUH I DONT KNOW, ANO BA ILALAGAY DITO
+                </h1>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
