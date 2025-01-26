@@ -1,12 +1,15 @@
 *{
     font-family: 'Roboto', sans-serif;
+    text-overflow: hidden;
 }
 html{
     box-sizing: border-box;
     overflow-x: hidden;
+
 }
 body{
     margin: 0;
+    background-color: white;
 }
 header{
     display: flex;
@@ -15,6 +18,10 @@ header{
     align-items: center;
     border-bottom: 2px solid black;
     width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    background-color: white;
 }
 #logo{
     margin-top: 5px;
@@ -26,8 +33,20 @@ header h3{
     position: relative;
     left: -50px
 }
-#page:hover, i:hover{
+#page:hover{
     cursor: pointer;
+}
+i:hover, #logout:hover{
+    color: green;
+}
+#logout{
+    border: 0;
+    background-color: transparent;
+    font-weight: bold;
+}
+#right{
+   display: flex;
+   gap: 20px;
 }
 #logo{
     width: 20%;
@@ -42,10 +61,11 @@ header h3{
     margin-top: 0.5px;
     float: left;
     border: 2px solid black;
-    height: 91%;
-    position: absolute;
+    height: 89%;
+    position: fixed;
+    top: 80px;
     left: 0;
-
+    background-color: white;
 }
 #sidebar-top button{
     text-align: left;
@@ -97,6 +117,9 @@ header h3{
     border: 2px solid black;
     height: 40%;
 }
+#student-info{
+    margin-top: 100px !important;
+}   
 #dpandinfo{
     display: flex;
     flex-direction: row;
@@ -137,8 +160,9 @@ header h3{
 
 #payor-info{
     width: 1000px;
-    margin: 20px auto;
-    border-bottom: 2px solid black;
+    margin: auto;
+    margin-top: 100px;
+    border-bottom: 5px solid black;
     height: 40%;
 }
 
@@ -154,27 +178,64 @@ header h3{
     margin: 20px auto;
     height: 40%;
 }
-#tuition-table{
+table{
     width: 1000px;
 }
-#tuition-table, #tuition-table th, #tuition-table td{
+table, table th, table td{
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
     padding: 12px;
 }
 
-#pay-button{
+#payment{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid black;
+    padding-bottom: 20px;
+}
+#total{
+    margin-top: 20px;
+    text-align: center;
+}
+#payment-method, #payment-channel{
     display: block;
     margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 200px;
+    background-color: white;
+}
+#payment-method-channel{
+    display: flex;
+    flex-direction: column;
+}
+#pay-button{
     border:2px solid black;
     font-weight: bold;
     font-size: large;
-    margin-top: 20px;
-    border-radius: 30px;
+    border-radius: 40px;
     padding: 12px;
     background-color: white;
+    position: relative;
+    top: 10px;
 }
 #pay-button:hover{
     color: green;
+}
+#pay-button:active{
+    background-color: ivory;
+}
+#dropdown-and-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 10px
+}
+
+#online-payment-history{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 20px;
 }
