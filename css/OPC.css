@@ -1,0 +1,81 @@
+#payor-info{
+    width: 1400px;
+    margin: auto;
+    margin-top: 100px;
+    border-bottom: 5px solid black;
+    height: 40%;
+}
+
+#forms{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px
+}
+
+#tuition-fees{
+    width: 1400px;
+    margin: 20px auto;
+    height: 40%;
+}
+table{
+    width: 1400px;
+}
+table, table th, table td{
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 12px;
+}
+
+#payment{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid black;
+    padding-bottom: 20px;
+}
+#total{
+    margin-top: 20px;
+    text-align: center;
+}
+#payment-method, #payment-channel{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 200px;
+    background-color: white;
+}
+#payment-method-channel{
+    display: flex;
+    flex-direction: column;
+}
+#pay-button{
+    border:2px solid black;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 40px;
+    padding: 12px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+}
+#pay-button:hover{
+    color: green;
+}
+#pay-button:active{
+    background-color: ivory;
+}
+#dropdown-and-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 10px
+}
+
+#online-payment-history{
+    width: 1400px;
+    margin: auto;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,49 @@
+#student-information h3, #guardian-information h3{
+    text-align: center;
+}
+#student-information{
+    width: 1400px;
+    margin: 60px 15%;
+    padding: 30px;
+    border-bottom: 2px solid black;
+}
+#student-dp{
+    width:30%;
+    height: 30%;
+}
+#photo-and-info{
+    display: flex;
+    gap: 20px;
+}
+#info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#student-information #info input, #student-information #info textarea,#student-information #info select{
+    min-width: 800px;
+    max-width: 1600px;
+}
+
+#guardian-information{
+    width: 1400px;
+    margin: 0 15% 50px 15%;
+}
+#guardian-information #info input, #guardian-information #info textarea{
+    min-width: 1200px;
+}
+
+#save{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    display: block;
+    margin: auto auto 100px auto;
+    font-weight: bold;
+}
+#save:hover{
+    color: green;
+}
