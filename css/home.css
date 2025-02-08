@@ -1,8 +1,9 @@
 #student-info , #grades{
-    width: 1400px;
-    margin: 5% 15%;
-    border: 2px solid black;
+    width: 70%;
+    margin: 5% 20%;
+    box-shadow: 0 0 5px -1px;
     height: 50%;
+    background-color: white;
 }
 #student-info{
     margin-top: 100px !important;
@@ -22,7 +23,7 @@
 }
 #student-info p, #grades p{
     margin-top: 0px;
-    border-bottom: 1px solid black;
+    box-shadow: 0 2px 5px -4px;
 
 }
 #info{
@@ -35,11 +36,14 @@
     border: none;
 }
 #student-number{
-    border: 1px solid black !important;
+    border: 1px solid #40513b !important;
     border-radius: 20px;
+    padding:4px
+
 }
-#name, #gender, #latest-enrollment{
+#name, #gender, #latest-enrollment, #form-pair label{
     pointer-events: none;
+    padding:4px
 }
 
 #idfk{

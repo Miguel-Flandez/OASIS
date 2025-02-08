@@ -1,6 +1,7 @@
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-overflow: hidden;
+    color: #40513b !important;
 }
 html{
     box-sizing: border-box;
@@ -9,6 +10,7 @@ html{
 }
 body{
     margin: 0;
+    background-color: #edf1d6;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -19,7 +21,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 2px solid black;
+    box-shadow: 0 0 5px -1px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -65,12 +67,13 @@ i:hover, #logout:hover{
 #sidebar{
     margin-top: 0.5px;
     float: left;
-    border: 2px solid black;
+    box-shadow: 0 0 5px -1px;
     height: 100%;
     position: fixed;
     top: 80px;
     left: 0;
-    background-color: white;
+    background-color: #9dc08b;
+    transition: transform 1s ease;
 }
 #sidebar-top button{
     text-align: left;
@@ -81,19 +84,19 @@ i:hover, #logout:hover{
     justify-content: space-between;
 
     border: none;
-    border-bottom: 2px solid black;
+    box-shadow: 0 0 5px -1px;
     padding: 10px;
     
     width: 100%;
 
-    background-color: white;
+    background-color: #9dc08b;
 }
 #sidebar-bottom button{
     text-align: left;
     font-size: large;
 
     border: none;
-    border-top: 2px solid black;
+    box-shadow: 0 0 5px -1px;
     padding: 10px;
 
     width: 100%;
@@ -110,7 +113,8 @@ i:hover, #logout:hover{
     background-color: ivory;
 }
 .hide-sidebar{
-    display: none;
+    
+    transform: translateX(-100%);
 }
 @media(max-width: 1000px){
     #sidebar{

@@ -1,11 +1,13 @@
 #student-information h3, #guardian-information h3{
     text-align: center;
 }
-#student-information{
-    width: 1400px;
-    margin: 60px 15%;
-    padding: 30px;
-    border-bottom: 2px solid black;
+#student-information, #guardian-information{
+    width: 70%;
+    margin: 8% 15%;
+    padding: 40px;
+    box-shadow: 0 0 5px -1px;
+    overflow-x: hidden;
+    background-color: white;
 }
 #student-dp{
     width:30%;
@@ -15,6 +17,9 @@
     display: flex;
     gap: 20px;
 }
+#info-list{
+    width: 100%;
+}
 #info{
     display: flex;
     justify-content: space-between;
@@ -22,20 +27,17 @@
     gap: 10px;
 }
 #student-information #info input, #student-information #info textarea,#student-information #info select{
-    min-width: 800px;
-    max-width: 1600px;
+    flex-grow: 1;
+    max-width: 800px;
 }
 
-#guardian-information{
-    width: 1400px;
-    margin: 0 15% 50px 15%;
-}
 #guardian-information #info input, #guardian-information #info textarea{
-    min-width: 1200px;
+    flex-grow: 1;
+    max-width: 1100px;
 }
 
 #save{
-    border: 2px solid black;
+    border: 1px solid #40513b;
     border-radius: 20px;
     width: 100px;
     background-color: white;
