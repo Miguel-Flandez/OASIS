@@ -12,6 +12,11 @@
     gap: 10px;
     margin-bottom: 20px
 }
+#form-pair input, #form-pair label{
+    background-color: #edf1d6;
+    border: none;
+    pointer-events: none;
+}
 
 #tuition-fees{
     width: 70%;

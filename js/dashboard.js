@@ -1,6 +1,5 @@
 const homeButton = document.getElementById('home-button');
 const opcButton = document.getElementById('opc-button')
-const studentInformationButton = document.getElementById('student-info-button')
 const profileButton = document.getElementById('profile-button');
 
 homeButton.onclick = function(){
@@ -9,9 +8,7 @@ homeButton.onclick = function(){
 opcButton.onclick = function(){
     window.location.href = 'online-payment-center.html';
 }
-studentInformationButton.onclick = function(){
-    window.location.href = 'studentInformation.html'
-}
+
 profileButton.onclick = function(){
     window.location.href = 'userProfile.html'
 }

@@ -1,7 +1,7 @@
 *{
     font-family: 'Montserrat', sans-serif;
     text-overflow: hidden;
-    color: #40513b !important;
+    color: #40513b;
 }
 html{
     box-sizing: border-box;
@@ -34,16 +34,15 @@ header{
     float: left;
     margin-right: 5px;
 }
-header h3{
+#home-button, #opc-button, #profile-button{
     font-weight: bold;
-}
-#page{
-    position: relative;
-    left: -50px
-}
-#page:hover{
     cursor: pointer;
 }
+#home-button:hover, #opc-button:hover, #profile-button:hover{
+    color: green;
+    text-decoration: underline;
+}
+
 i:hover, #logout:hover{
     color: green;
 }

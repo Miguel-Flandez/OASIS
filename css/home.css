@@ -1,52 +1,48 @@
-#student-info , #grades{
-    width: 70%;
-    margin: 5% 20%;
+#student-information h3, #student-subjects h3{
+    text-align: center;
+}
+#student-information,#student-subjects h3{
+    width: 50%;
+    margin: 8% 25%;
+    padding: 40px;
     box-shadow: 0 0 5px -1px;
-    height: 50%;
+    overflow-x: hidden;
     background-color: white;
 }
-#student-info{
-    margin-top: 100px !important;
-}   
-#student-info p, #grades p{
-    padding: 10px;
+#student-dp{
+    width:30%;
+    height: 18%;
 }
-#dpandinfo{
+#photo-and-info{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    gap: 20px;
 }
-#dp{
-    width: 20%;
-    margin-left: 3%;
-    margin-bottom: 3%;
-}
-#student-info p, #grades p{
-    margin-top: 0px;
-    box-shadow: 0 2px 5px -4px;
-
+#info-list{
+    width: 100%;
 }
 #info{
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin:auto 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
-#form-pair input{
+#student-information #info input, #student-information #info textarea,#student-information #info select{
+    flex-grow: 1;
+    max-width: 500px;
     border: none;
-}
-#student-number{
-    border: 1px solid #40513b !important;
-    border-radius: 20px;
-    padding:4px
-
-}
-#name, #gender, #latest-enrollment, #form-pair label{
     pointer-events: none;
-    padding:4px
 }
 
-#idfk{
-    text-align: center;
-    font-size: 50px;
+#save{
+    border: 1px solid #40513b;
+    border-radius: 20px;
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    display: block;
+    margin: auto auto 100px auto;
+    font-weight: bold;
+}
+#save:hover{
+    color: green;
 }

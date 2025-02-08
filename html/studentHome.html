@@ -13,13 +13,14 @@
 </head>
 <body>
     <header>
-        <i class="fa-solid fa-bars"></i>
         <div id="left">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYmHnuqhvzZw5T0-62u8reDZpitWgwdyZcA&s" alt="Oakwood" id="logo">
             <h3>OASIS</h3>
         </div>
         
-        <h3 id="page">Home</h3>
+        <h3 id="home-button">Home</h3>
+        <h3 id="opc-button">Online Payment Center</h3>
+        <h3 id="profile-button">User Profile</h3>
         <div id="right">
             <i class="fa-solid fa-bell"></i>
             <button id="logout">Logout  </button>
@@ -27,15 +28,6 @@
         
     </header>
 
-    <div id="sidebar">
-        <div id="sidebar-top">
-        <button id="home-button">Home</button>
-        <button id="opc-button">Online Payment Center</button>
-        <button id="student-info-button">Student Information</button>
-        <button id="profile-button">User Profile</button>
-        
-        </div>
-    </div>
 
     <div id="homescreen">   
         <div id="student-info">
@@ -44,43 +36,35 @@
             <div id="dpandinfo">
             
         
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="dp" id="dp">
-
-                <div id="info">
-                    <div id="form-pair">
-                        <label for="student-number">Student Number: </label>
-                        <input type="text" name="student-number" id="student-number" placeholder="2021-12345">
+                <div id="student-information">
+                    <h3>Student Information</h3>
+                    <div id="photo-and-info">
+                        <img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="dp" id="student-dp">
+                        <div id="info-list">
+                            <div id="info">
+                                <p>Student Number: </p>
+                                <input type="text" id="student-number" placeholder="2021-12345">
+                            </div>
+                            <div id="info">
+                                <p>Name: </p>
+                                <input type="text" id="student-name" placeholder="Johnny Sins">
+                            </div>
+                            <div id="info">
+                                <p>Level: </p>
+                                <input type="text" id="level" placeholder="Grade 2">
+                            </div>
+                            <div id="info">
+                                <p>Balance: </p>
+                                <input type="text" id="balance" placeholder="$10,000">
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div id="form-pair">
-                        <label for="name">Name: </label>
-                        <input type="text" id="name">
-                    </div>
-                    
-                    <div id="form-pair">
-                        <label for="gender">Gender: </label>
-                        <input type="text" id="gender">
-                    </div>
-                    
-                    <div id="form-pair">
-                        <label for="latest-enrollment">Latest Enrollment</label>
-                        <input type="text" id="latest-enrollment">
-                    </div>
-                    
                 </div>
-            </div>
-        </div>
 
-        <div id="grades">
-            <p>Grades</p>
-            <div id="grade-date">
-                <h1 id="idfk">
-                BRUH I DONT KNOW, ANO BA ILALAGAY DITO
-                </h1>
-            </div>
-        </div>
-    </div>
-    
+                <div id="student-subjects">
+                    <h3>Subjects Enlisted</h3>
+                
+                </div>
 
     <script src="../js/dashboard.js"></script>
 </body>
