@@ -1,0 +1,49 @@
+#student-information h3, #student-subjects h3{
+    text-align: center;
+}
+#student-information,#student-subjects{
+    width: 50%;
+    margin: 12% 25%;
+    padding: 2%;
+    box-shadow: 0 0 5px -1px;
+    overflow-x: hidden;
+    background-color: white;
+    position: relative;
+}
+#info-list{
+    display: flex;
+    flex-direction: column;
+}
+#info{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#info input{
+    flex-grow: 1;
+    max-width: 70%;
+    height: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+.fa-solid.fa-key{
+    position: absolute;
+    right: 5%;
+    color: rgba(128, 128, 128, 0.6)
+}
+
+
+
+#save{
+    border: 1px solid #40513b;
+    border-radius: 20px;
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    display: block;
+    margin: 3% auto;
+    font-weight: bold;
+}
+#save:hover{
+    color: green;
+}

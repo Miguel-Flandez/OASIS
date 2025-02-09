@@ -25,12 +25,33 @@
             <i class="fa-solid fa-bell"></i>
             <button id="logout">Logout  </button>
         </div>
-        
     </header>
 
+    <div id="student-information">
+        <h3>Student Information</h3>
+            <div id="info-list">
+                <div id="info">
+                    <p>Old Password: </p>
+                    <input type="password" id="old-password">
+                    <i class="fa-solid fa-key old"></i>
+                </div>
+                <div id="info">
+                    <p>New Password: </p>
+                    <input type="password" id="new-password">
+                    <i class="fa-solid fa-key new"></i>
+                </div>
+                <div id="info">
+                    <p>Re-type new password: </p>
+                    <input type="password" id="re-new-password">
+                    <i class="fa-solid fa-key retype"></i>
+                </div>
+            </div>
 
+            <button id="save" type="button">Save</button>
+    </div>
 
     
-    <script src="../js/dashboard.js"></script>
+    <script src="../js/routing.js"></script>
+    <script src="../js/password.js"></script>
 </body>
 </html>

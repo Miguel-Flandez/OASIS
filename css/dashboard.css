@@ -112,11 +112,16 @@ i:hover, #logout:hover{
     background-color: ivory;
 }
 .hide-sidebar{
-    
     transform: translateX(-100%);
 }
 @media(max-width: 1000px){
     #sidebar{
         display: none;
     }
+}
+
+#to-admin{
+    position: absolute;
+    top: 20%;
+    left: 0;
 }
