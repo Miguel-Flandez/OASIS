@@ -34,11 +34,11 @@ header{
     float: left;
     margin-right: 5px;
 }
-#home-button, #opc-button, #profile-button{
+#home-button, #opc-button, #profile-button, #dashboard-button, #student-accounts, #oasis-accounts,#payment-center, #payor-history,#employee-dashboard-button,#employee-student-accounts,#employee-oasis-accounts,#employee-payment-center,#employee-payor-history{
     font-weight: bold;
     cursor: pointer;
 }
-#home-button:hover, #opc-button:hover, #profile-button:hover{
+#home-button:hover, #opc-button:hover, #profile-button:hover, #dashboard-button:hover, #student-accounts:hover, #oasis-accounts:hover, #payment-center:hover, #payor-history:hover,#employee-dashboard-button:hover,#employee-student-accounts:hover,#employee-oasis-accounts:hover,#employee-payment-center:hover,#employee-payor-history:hover{
     color: green;
     text-decoration: underline;
 }
@@ -120,8 +120,35 @@ i:hover, #logout:hover{
     }
 }
 
+#to-student{
+    position: absolute;
+    top: 15%;
+}
 #to-admin{
     position: absolute;
     top: 20%;
-    left: 0;
+}
+#to-employee{
+    position: absolute;
+    top: 25%;
+}
+
+#notif-modal{
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    position:fixed;
+    top: 80px;
+    right: 0;
+    width: 20%;
+}
+#notifs{
+    display: flex;
+    flex-direction: column;
+}
+#notif{
+    padding: 5%;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+.hide{
+    display: none;
 }

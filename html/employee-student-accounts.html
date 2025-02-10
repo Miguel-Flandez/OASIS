@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="../css/userProfile.css">
+    <link rel="stylesheet" href="../css/employee-student-accounts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/de323b5912.js" crossorigin="anonymous"></script>
-    <title>User Profile</title>
+    <title>Student Accounts</title>
 </head>
 <body>
     <header>
@@ -18,36 +18,54 @@
             <h3>OASIS</h3>
         </div>
         
-        <h3 id="home-button">Home</h3>
-        <h3 id="opc-button">Online Payment Center</h3>
-        <h3 id="profile-button">User Profile</h3>
+        <h3 id="employee-dashboard-button">Dashboard</h3>
+        <h3 id="employee-student-accounts">Student Accounts</h3>
+        <h3 id="employee-oasis-accounts">Oasis Accounts</h3>
+        <h3 id="employee-payment-center">Payment Center</h3>
+        <h3 id="employee-payor-history">Payor History</h3>
+
         <div id="right">
             <i class="fa-solid fa-bell"></i>
             <button id="logout">Logout  </button>
         </div>
+        
     </header>
 
-    <div id="student-information">
-        <h3>Student Information</h3>
-            <div id="info-list">
-                <div id="info">
-                    <p>Old Password: </p>
-                    <input type="password" id="old-password">
-                    <i class="fa-solid fa-key old"></i>
-                </div>
-                <div id="info">
-                    <p>New Password: </p>
-                    <input type="password" id="new-password">
-                    <i class="fa-solid fa-key new"></i>
-                </div>
-                <div id="info">
-                    <p>Re-type new password: </p>
-                    <input type="password" id="re-new-password">
-                    <i class="fa-solid fa-key retype"></i>
-                </div>
-            </div>
+    <div id="accounts">
 
-            <button id="save" type="button">Save</button>
+        <div id="search">
+            <label for="search-student">Search Account: </label>
+            <input type="text" id="search-student" name="search-student" placeholder="2021-12345">
+        </div>
+        
+
+        <div id="crud-buttons">
+            <button id="edit">Edit</button>
+            <button id="save">Save</button>
+        </div>
+
+        <table id="student-accounts-table">
+            <thead>
+            <tr>
+                <th>Student Number</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Middle Name</th>
+                <th>Level</th>
+                <th>Section</th>
+            </tr>
+            </thead>
+            <tbody>
+            <div id="fee-input">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </div>
+            </tbody>
+        </table>
     </div>
 
     <div id="notif-modal" class="hide">
@@ -69,7 +87,6 @@
     </div>
 
     <script src="../js/common-functions.js"></script>
-    <script src="../js/routing-student.js"></script>
-    <script src="../js/password.js"></script>
+    <script src="../js/routing-employee.js"></script>
 </body>
 </html>

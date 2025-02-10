@@ -45,5 +45,6 @@
     font-weight: bold;
 }
 #save:hover{
-    color: green;
+    color: white;
+    background-color: #40513b;
 }

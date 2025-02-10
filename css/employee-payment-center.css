@@ -1,0 +1,88 @@
+#accounts{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    height: 40%;
+}
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+#search-student{
+    border: 1px solid rgba(128, 128, 128,0.5);
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+#payor-details{
+    padding-bottom: 2%;
+    border-bottom: 5px solid #40513b;
+    text-align: center;
+}
+#payor-id, #payor-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+#save{ 
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #40513b;
+    width: 20%;
+    height: 40px;
+    font-weight: bold;
+}
+#save:hover, #add:hover, #delete:hover{
+    background-color: #40513b;
+    color: white;
+} 
+
+table{
+    width: 100%;
+}
+table, table th, table td{
+    text-align: center;
+    border: 2px solid #40513b;
+    border-collapse: collapse;
+    padding: 12px;
+    background-color: white;
+}
+
+#current-tuition-fees, #liabilities{
+    padding-bottom: 2%;
+    border-bottom: 5px solid #40513b;
+}
+#due-date{
+    border: none;
+}
+#amount, #liability{
+    border: 1px solid rgba(128, 128, 128,0.5);
+    border-radius: 20px;
+    height: 20px;
+}
+
+#liabilities-top, #misc-fees-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#crud-buttons{
+    display: flex;
+    gap: 10%;
+}
+#add, #delete{
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #40513b;    
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+}
+
+#misc-fees{
+    margin-bottom: 5%;
+}

@@ -68,7 +68,8 @@ table, table th, table td{
     top: 10px;
 }
 #pay-button:hover{
-    color: green;
+    background-color: #40513b;
+    color: white;
 }
 #pay-button:active{
     background-color: ivory;

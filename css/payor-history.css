@@ -1,0 +1,40 @@
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+#search-student{
+    border: 1px solid rgba(128, 128, 128,0.5);
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+#payor-details{
+    margin-bottom: 1%;
+    text-align: center;
+}
+#payor-id, #payor-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+
+#accounts{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    height: 40%;
+}
+table{
+    width: 100%;
+}
+table, table th, table td{
+    text-align: center;
+    border: 2px solid #40513b;
+    border-collapse: collapse;
+    padding: 12px;
+    background-color: white;
+}

@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="../css/admin-home.css">
+    <link rel="stylesheet" href="../css/student-accounts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/de323b5912.js" crossorigin="anonymous"></script>
-    <title>Admin Dashboard</title>
+    <title>Student Accounts</title>
 </head>
 <body>
-    <button id="to-student">to Student</button>
-    <button id="to-employee">to Employee</button>
     <header>
         <div id="left">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYmHnuqhvzZw5T0-62u8reDZpitWgwdyZcA&s" alt="Oakwood" id="logo">
@@ -32,54 +30,43 @@
         
     </header>
 
+    <div id="accounts">
 
-    <div id="dashboard-top">
-        <label for="data-analytics"></label>
-        <select name="data-analytics" id="data-analytics">
-            <option value="statistics">Statistics</option>
-            <option value="payment-trends">Payment Trends</option>
-        </select>
-        <h2 id="date-and-time"></h2>
-    </div>
-
-    <div id="dashboard-info">
-        <div id="info-boxes">
-            <div id="info-box">
-                <p>Currently Enrolled Students: </p>
-                <h2 id="enrolled-students"></h2>
-            </div>
-            <div id="info-box">
-                <p>Outstanding Balance: </p>
-                <h2 id="outstanding-balances"></h2>
-            </div>
-            <div id="info-box">
-                <p>Overdue Accounts: </p>
-                <h2 id="overdue-accounts"></h2>
-            </div>
-            <div id="info-box">
-                <p>Current School Year Quarter: </p>
-                <h2 id="current-school-year"></h2>
-            </div>
-            <div id="info-box">
-                <p>Payments on Process: </p>
-                <h2 id="payments-on-process"></h2>
-            </div>
+        <div id="search">
+            <label for="search-student">Search Account: </label>
+            <input type="text" id="search-student" name="search-student" placeholder="2021-12345">
         </div>
-    </div>
-
-    <div id="graph-container">
         
-    </div>
 
-    <i class="fa-solid fa-comment-dots"></i>
-
-
-    <div id="chatbox-modal" class="chatbox hide">
-        <div class="chat-content"></div> <!-- Chat messages will go here -->
-        <div class="chat-input">
-            <input type="text" id="chat-message" placeholder="Type a message...">
-            <button id="send-message"><i class="fa-solid fa-paper-plane"></i></button>
+        <div id="crud-buttons">
+            <button id="add">Add Student</button>
+            <button id="edit">Edit</button>
+            <button id="delete">Delete Student</button>
+            <button id="save">Save</button>
         </div>
+
+        <table id="student-accounts-table">
+            <thead>
+            <tr>
+                <th>Student Number</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Middle Name</th>
+                <th>Level</th>
+                <th>Section</th>
+            </tr>
+            </thead>
+            <tbody>
+            <div id="fee-input">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </div>
+            </tbody>
+        </table>
     </div>
 
     <div id="notif-modal" class="hide">
@@ -102,6 +89,5 @@
 
     <script src="../js/common-functions.js"></script>
     <script src="../js/routing-admin.js"></script>
-    <script src="../js/admin-dashboard.js"></script>
 </body>
 </html>
