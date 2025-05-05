@@ -11,7 +11,7 @@ use Paymongo\PaymongoClient;
 // Configure Paymongo with Test Secret Key
 $paymongoClient = null;
 try {
-    // $paymongoClient = new PaymongoClient('sk_test_Armfvn7Z1iADDVEvpoisocrk'); // Instantiate with API key
+    $paymongoClient = new PaymongoClient(''); // Instantiate with API key (sk_test_Armfvn7Z1iADDVEvpoisocrk) paste this again kasi ayaw gumana
 } catch (Exception $e) {
     error_log("Failed to initialize Paymongo Client: " . $e->getMessage());
     http_response_code(500);
