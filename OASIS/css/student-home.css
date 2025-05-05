@@ -1,0 +1,157 @@
+/* Calculate header height: padding (1.5rem top + bottom = 3rem) + content height */
+/* Assuming average header content height ~ 50px + padding 3rem (~48px), total ~98px */
+/* We'll use a variable for flexibility */
+
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 90px;
+    height:100%;
+    width: 280px;
+    background-color: #618264;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    
+    z-index: 800; /* Below header's z-index of 900 */
+}
+#student-dp {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    border: 3px solid transparent;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+#student-dp:hover {
+    transform: scale(1.05);
+}
+
+#student-information h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#info-list {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: #D0E7D2;
+    transform: translateX(5px);
+}
+
+.info-item label {
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.info-item span, 
+.info-item select {
+    font-size: 16px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-item select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+}
+
+.info-item select:hover {
+    border-color: #618264;
+}
+
+/* Main content adjustment */
+.with-sidebar {
+    margin-left: 280px;
+    padding-top: var(--header-height); /* Prevents content from hiding under header */
+    transition: margin-left 0.3s ease;
+}
+
+/* Responsive design */
+
+
+
+@media (max-width: 1530px) {
+    #sidebar{
+        position: static;
+        margin: 10% auto;
+        display: flex;
+        background-color: white;
+        border-radius: 8px;
+        width: 80%;
+        padding: 0;
+    }
+    #left-info{
+        background-color: #618264;
+        height: 100%;
+        width: 100%;
+    }
+    #student-dp{
+        width: 80%;
+        height: 80%;
+    }
+    #student-information{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #student-information h3{
+        display: none;
+    }
+}
+
+@media(max-width:428px){
+    #sidebar{
+        position: static;
+        margin: 30% auto auto auto;
+        display: flex;
+        background-color: white;
+        border-radius: 8px;
+        width: 80%;
+    }
+    #student-information{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #student-information h3{
+        display: none;
+    }
+    .info-item{
+        font-size: 10px;
+    }
+    #student-dp{
+        width:80%;
+        height: 80%;
+    }
+
+}

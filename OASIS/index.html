@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-image: url('assets/images/background.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height: 100vh; 
+            margin: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div id="left">
+            <img src="assets/images/oakwood.jpg" alt="Oakwood" id="logo">
+        </div>
+
+        <div id="right">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <div id="error-message">Invalid Username or Password</div>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <div id="password-container">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <i class="fa-solid fa-key" id="login-passIcon"></i>
+                </div>
+    
+                <button type="submit">Login</button>
+            </form>
+            <div class="forgot-password">
+                <a href="forgot_password.php">Forgot Password?</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/de323b5912.js" crossorigin="anonymous"></script>
+    <script src="js/loginPass.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const errorMessage = document.getElementById('error-message');
+            if (urlParams.get('error') === 'invalid') {
+                errorMessage.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

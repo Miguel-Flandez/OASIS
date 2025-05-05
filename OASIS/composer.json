@@ -1,0 +1,10 @@
+{
+    "require": {
+<<<<<<< HEAD
+        "phpmailer/phpmailer": "^6.9",
+        "paymongo/paymongo-php": "^0.0.0"
+=======
+        "phpmailer/phpmailer": "^6.9"
+>>>>>>> 92d29db263371feb3a8842432bf750b9a4a69a2e
+    }
+}

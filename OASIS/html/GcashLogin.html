@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Gcash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de323b5912.js" crossorigin="anonymous"></script>
+    <title>Gcash</title>
+</head>
+<body>
+    <header></header>
+    <img src="../assets/images/GCash-Logo.png" alt="gcash" id="gcash-logo">
+    <div id="login-container">
+        <div id="top">
+            <h2 id="merchant">Merchant</h2>
+            <h2 id="oasis">Oasis</h2>
+        </div>
+        <div id="middle">
+            <h2 id="due">Amount Due</h2>
+            <h2 id="price"><?php echo number_format($_SESSION['payment_amount'], 2); ?></h2>
+        </div>
+        <div id="bottom">
+            <h2 id="strong">Login to pay with GCash</h2>
+            <form id="login-form" action="gcash_payment.php?step=code" method="POST">
+                <fieldset id="auth">
+                    <legend id="mobile">Mobile Number</legend>
+                    <p id="left">+63</p>
+                    <input type="text" id="number" name="mobile_number" value="<?php echo $_SESSION['mobile_number']; ?>" readonly>
+                </fieldset>
+                <button id="next" type="submit">NEXT</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Dont have a GCash account? <a href="">Register now</a></p>
+    </footer>
+    
+</body>
+</html>

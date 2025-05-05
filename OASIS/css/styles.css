@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: white;
+    box-shadow: 0 0 5px -1px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 50%;
+    width: 40%;
+    text-align: center;
+    display: flex;
+}
+
+#logo {
+    width: 100%;
+}
+#right{
+    width: 60%;
+    background: linear-gradient(to right, #06402B, #638746) ;
+    height: 100%;
+}
+#left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    flex-shrink: 0;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#username {
+    margin-top: 30px;
+}
+
+#password {
+    margin-top: 20px;
+}
+
+button {
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    width: 20%;
+    padding: 10px;
+    background-color: #06402B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: #06402B;
+    border: 1px solid #06402B;
+}
+
+.message {
+    margin-top: 15px;
+}
+
+#skip {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#error-message {
+    display: none;
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+#password-container{
+    position: relative;
+    padding: 0;
+}
+i{
+    position: absolute;
+    transform: translate(-22px, 29px);
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media (max-width: 428px) {
+    .login-container {
+        width: 80%;
+        height: auto;
+    }
+    #right{
+        padding: 5%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 60%;
+        margin-top: 20px;
+    }
+    i{
+        transform: translate(60px, -45px);
+    }
+
+}
+

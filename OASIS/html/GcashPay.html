@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Gcash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de323b5912.js" crossorigin="anonymous"></script>
+    <title>Gcash</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <img src="../assets/images/GCash-Logo.png" alt="gcash" id="gcash-logo">
+    <div id="login-container3">
+        <div id="header">OASIS</div>
+        <fieldset id="fieldset-top">
+            <legend id="pay-with">PAY WITH</legend>
+            <div>
+                <h3>GCash</h3>
+                <div id="right2">
+                    <div id="stack">
+                        <h3>PHP</h3>
+                        <?php
+                        $updated_balance = $_SESSION['balance'] - $_SESSION['payment_amount'];
+                        ?>
+                        <h3>Available Balance: <?php echo number_format($_SESSION['balance'], 2); ?></h3>
+                        <h3>Balance After Payment: <?php echo number_format($updated_balance, 2); ?></h3>
+                    </div>
+                    <input type="radio" id="radio" checked disabled>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset id="fieldset-bottom">
+            <legend id="about-to-pay">YOU ARE ABOUT TO PAY</legend>
+            <div id="bottom-top">
+                <h3 id="amount">Amount</h3>
+                <h3 id="price2"><?php echo number_format($_SESSION['payment_amount'], 2); ?></h3>
+            </div>
+            <div id="bottom-bottom">
+                <h3 id="discount">Discount</h3>
+                <h3 id="voucher">No Available Voucher</h3>
+            </div>
+        </fieldset>
+        <div id="total">
+            <h3>Total</h3>
+            <h1 id="final-price"><?php echo number_format($_SESSION['payment_amount'], 2); ?></h1>
+        </div>
+        <p id="instruction3">Please review to ensure that the details are correct before you proceed</p>
+        <form id="pay-form" action="process_payment.php" method="POST">
+            <input type="hidden" name="updated_balance" value="<?php echo $updated_balance; ?>">
+            <button id="pay-button" type="submit">Pay PHP <?php echo number_format($_SESSION['payment_amount'], 2); ?></button>
+        </form>
+    </div>
+    <footer></footer>
+</body>
+</html>

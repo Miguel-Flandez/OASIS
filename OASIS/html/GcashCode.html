@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Gcash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de323b5912.js" crossorigin="anonymous"></script>
+    <title>Gcash</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <img src="../assets/images/GCash-Logo.png" alt="gcash" id="gcash-logo">
+    <div id="login-container2">
+        <div id="bottom">
+            <h2 id="strong">Login to pay with GCash</h2>
+            <p id="instruction">Enter the 6-digit authentication code sent to your registered mobile number</p>
+            <form id="code-form" action="gcash_payment.php?step=pin" method="POST">
+                <div id="underlines">
+                    <?php
+                    $code_digits = str_split($_SESSION['auth_code']);
+                    foreach ($code_digits as $digit) {
+                        echo '<input type="text" id="underline" name="code[]" value="' . $digit . '" maxlength="1" readonly>';
+                    }
+                    ?>
+                </div>
+                <div id="resendDiv">
+                    <p id="instruction2">Didn't get the code?</p>
+                    <p id="timer">Resend 300s</p>
+                </div>
+                <button id="next2" type="submit">NEXT</button>
+            </form>
+        </div>
+    </div>
+    <footer></footer>
+    
+</body>
+</html>

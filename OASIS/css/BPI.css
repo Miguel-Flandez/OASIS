@@ -1,0 +1,118 @@
+body{
+    background-color: #dfe0e0;
+}
+#BPI-logo{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+#login-container{
+    background-color: white;
+    border: none;
+    width: 30%;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(206, 204, 204, 0.5);
+    font-family: 'Roboto',sans-serif;
+    margin: 10% auto;
+}
+#username-field, #password-field, #choose-account{
+    border: none;
+    margin-top: 3%;
+    
+}
+#username-field legend, #password-field legend{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+#username-field input, #password-field input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+}
+#choose-account p{
+    font-size: 18px;
+
+}
+#terms{
+    padding: 20px;
+    background-color: #dfe0e0;
+    margin: 3% auto;
+    width: 90%;
+    border-radius: 5px;
+
+}
+span{
+color: deepskyblue;
+}
+#login, #submit, #pay{
+    border: none;
+    background-color: #a90101;
+    color: white;
+    width: 100%;
+    padding: 2%;
+    border-radius: 5px;
+    margin: 5% auto;
+    display: block;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+#login:hover, #submit:hover, #pay:hover{
+    background-color: #820303;
+}
+
+#savings{
+    border-top: 1px solid rgba(206, 204, 204, 0.5);
+    border-radius: 5px;
+    padding: 2%;
+}
+#savings:hover{
+    background-color: #dfe0e0;
+}
+#savings div{
+    margin: 5% auto; 
+    line-height: 5px;
+    cursor: pointer;
+}
+
+#header{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#instruction{
+    text-align: center;
+}
+#otps{
+    display:flex;
+    gap: 1%;
+    width: 80%;
+    margin: auto;
+}
+#otp{
+    width: 15%;
+    height: 50px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid rgba(170, 169, 169, 0.5);
+}
+#resend{
+    margin-top: 30%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #a90101;
+}
+#transaction-field{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    color: gray;
+    margin-top: 5%;
+}
+#top, #middle, #total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,157 @@
+* {
+    margin: 0; /* From first */
+    padding: 0; /* From first */
+    box-sizing: border-box; /* From first */
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased; /* From first */
+    -moz-osx-font-smoothing: grayscale; /* From first */
+    text-overflow: hidden; /* From second */
+    color: #618264; /* From second, kept as it doesn't conflict */
+}
+
+html {
+    box-sizing: border-box; /* From second, kept as it matches first */
+    overflow-x: hidden; /* From second */
+}
+
+body {
+    background: linear-gradient(to bottom, white, #D0E7D2);
+    line-height: 1.6;
+    overflow-x: hidden;
+    margin: 0;
+    position: relative;
+}
+/* Header - Fully from first file */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 900;
+
+}
+
+
+#logo {
+    position: absolute;
+    top: 5px;
+    width: 80px;
+}
+
+header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #444;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.1s ease;
+}
+
+header h3:hover, header h3:focus {
+    color: #618264;
+    background: rgba(0, 196, 204, 0.1);
+    transform: scale(1.05);
+}
+
+header h3.active {
+    color: #618264;
+    font-weight: 700;
+    border-bottom: 3px solid #618264;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#logout {
+    padding: 0.6rem 1.2rem;
+    background: #618264;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#logout:hover, #logout:focus {
+    background: #79AC78;
+    transform: translateY(-2px);
+}
+
+/* Rest of the second file's styles, unchanged */
+
+.fa-solid.fa-bars {
+    position: absolute;
+    left: 20px;
+}
+
+
+#notif-modal {
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 20%;
+}
+
+#notifs {
+    display: flex;
+    flex-direction: column;
+}
+
+#notif {
+    padding: 5%;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.hide {
+    display: none;
+}
+
+/* Responsive Styles */
+
+@media(max-width:1080px){
+    header h3{
+        font-size: 15px;
+    }
+    #logo{
+        width: 45px;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+    }
+    #logout{
+        font-size: 10px;
+    }
+    i{
+        font-size: 12px
+    };
+    #sidebar{
+        position: fixed;
+        top: 80px !important;
+
+    }
+}
+@media(max-width:428px){
+    header{
+        gap: none;
+    }
+    header h3{
+        font-size: 7px;
+    }
+    #logout{
+        padding: 5px;
+    }
+
+}

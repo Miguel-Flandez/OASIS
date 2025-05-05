@@ -1,0 +1,139 @@
+#paymaya-logo-in{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+#paymaya-logo-out{
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+#login-container{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 1);
+    font-family: 'Roboto',sans-serif;
+    margin: 10% auto;
+}
+#login-container2{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 1);
+    font-family: 'Roboto',sans-serif;
+    margin: 5% auto;
+}
+#login-container3{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 1);
+    font-family: 'Roboto',sans-serif;
+    margin: 5% auto;
+
+}
+#header{
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+
+}
+#login-container h3{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+#email-field, #password-field, #OTP-field{
+    border: none;
+    margin-top: 3%;
+    
+}
+#email-field legend, #password-field legend, #OTP-field legend{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+#email-field input, #password-field input{
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+#OTP-field input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 40px;
+    display: block;
+    margin: 5% auto auto auto;
+}
+#login, #pay{
+    border-radius: 5px;
+    padding: 15px;
+    border: 0;
+    background-color: #00bbff;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 5% auto auto auto;
+    display: block;
+    width: 90%;
+    font-size: larger;
+}
+#proceed{
+    border-radius: 5px;
+    padding: 15px;
+    border: 0;
+    background-color: #00bbff;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 5% auto auto auto;
+    display: block;
+    width: 95%;
+    font-size: larger;
+}
+
+#login:hover, #proceed:hover, #pay:hover{
+    background-color: #0689b9;
+}
+#forgot-pass, #resend-pass{
+    text-align: center;
+    color: #00bbff;
+}
+
+
+
+#transaction-field{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    color: gray;
+    margin-top: 5%;
+}
+#top, #middle, #total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#method{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+}
+#paymaya-pick{
+    width: 10%;
+}

@@ -1,0 +1,445 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Accounts Container */
+#accounts {
+    width: 80%;
+    max-width: 1200px;
+    margin:8% auto 20px;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #ffffff, #f9fcff);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    min-height: calc(60vh - 100px);
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+}
+
+#accounts:hover {
+    transform: translateY(-3px);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.action-btn {
+    padding: 0.6rem 1.2rem;
+    background: #fff;
+    border: 2px solid #618264;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #618264;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.action-btn:hover,
+.action-btn:focus {
+    background: #618264;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Hidden Forms */
+#create-parent-form,
+#link-student-form {
+    display: none;
+}
+
+/* Form Row */
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.form-row label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #618264
+}
+
+.form-row input,
+.form-row select {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fafafa;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+    border-color: #618264;
+    box-shadow: 0 0 8px rgba(64, 81, 59, 0.2);
+    background: #fff;
+}
+
+/* Parent Search */
+#parent-search {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+    background: #fafafa;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#parent-search:focus {
+    border-color: #618264;
+    box-shadow: 0 0 8px rgba(64, 81, 59, 0.2);
+}
+
+/* Parent Options Dropdown */
+#parent-options {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+#parent-options div {
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    color: #333;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+#parent-options div:hover {
+    background-color: #f5f7fa;
+}
+
+/* Submit Button */
+.submit-btn {
+    margin: 3% auto auto auto;
+    display: block;
+    padding: 0.6rem 1.2rem;
+    background: #fff;
+    border: 2px solid #618264;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #618264;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background: #618264;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Messages */
+.message {
+    margin-top: 0.8rem;
+    color: #618264;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.error {
+    color: #ff4444;
+}
+
+/* Create Account Form */
+#create-account-form {
+    width: 700px;
+    max-width: 90%;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #ffffff, #f9fcff);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+#create-account-form:hover {
+    transform: translateY(-3px);
+}
+
+#create-account-form form {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.form-row {
+    display: contents;
+}
+
+#create-account-form label {
+    text-align: right;
+    padding-right: 0.8rem;
+    font-weight: 600;
+    color: #618264;
+}
+
+#create-account-form input[type="text"],
+#create-account-form input[type="password"],
+#create-account-form select {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+    background: #fafafa;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#create-account-form input[type="text"]:focus,
+#create-account-form input[type="password"]:focus,
+#create-account-form select:focus {
+    border-color: #618264;
+    box-shadow: 0 0 8px rgba(54, 116, 181, 0.2);
+    background: #fff;
+}
+
+/* Create Account Form Buttons */
+#create-account-form button {
+    grid-column: 1 / span 2;
+    padding: 0.6rem 1.2rem;
+    background: #fff;
+    border: 2px solid #618264;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #618264;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#create-account-form button:hover,
+#create-account-form button:focus {
+    background: #618264;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Create Buttons Container */
+#create-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#create-buttons button {
+    padding: 0.6rem 1.2rem;
+    background: #fff;
+    border: 2px solid #618264;
+    border-radius: 25px;
+    width: 20%;
+    max-width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #618264;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#create-buttons button:hover,
+#create-buttons button:focus {
+    background: #618264;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Student Information and Subjects */
+#student-information,
+#student-subjects {
+    width: 50%;
+    max-width: 600px;
+    margin: 5% auto;
+    padding: 2%;
+    background: linear-gradient(135deg, #ffffff, #f9fcff);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+#student-information:hover,
+#student-subjects:hover {
+    transform: translateY(-3px);
+}
+
+#student-information h3,
+#student-subjects h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#info input {
+    flex-grow: 1;
+    max-width: 70%;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 25px;
+    font-size: 0.95rem;
+    background: #fafafa;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#info input:focus {
+    border-color: #618264;
+    box-shadow: 0 0 8px rgba(54, 116, 181, 0.2);
+}
+
+.fa-solid.fa-key {
+    position: absolute;
+    right: 5%;
+    color: rgba(128, 128, 128, 0.6);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.fa-solid.fa-key:hover {
+    color: #618264;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #accounts,
+    #student-information,
+    #student-subjects {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    #accounts {
+        margin: 80px auto 20px;
+        padding: 1rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    #create-account-form {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    #create-account-form form {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    #create-account-form label {
+        text-align: left;
+        padding-right: 0;
+    }
+
+    #create-account-form button {
+        grid-column: 1 / 1;
+    }
+
+    #create-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    #create-buttons button {
+        width: 100%;
+        max-width: none;
+    }
+
+    #student-information,
+    #student-subjects {
+        width: 92%;
+        margin: 3% auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #accounts{
+        margin: 30% auto;
+    }
+    .action-btn,
+    .submit-btn,
+    #create-account-form button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    #student-information h3,
+    #student-subjects h3 {
+        font-size: 1.3rem;
+    }
+
+    #info input {
+        max-width: 65%;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .fa-solid.fa-key {
+        font-size: 1rem;
+    }
+}
