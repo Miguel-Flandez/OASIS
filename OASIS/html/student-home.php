@@ -298,6 +298,12 @@ $conn->close();
 
     <div id="notif-modal" class="hide">
         <div id="notifs">
+            <div id="notif" class="pt-4 changePassNotif">
+                <h3>Password Change Recommended</h3>
+                <p>For the security of your account, please change your password.
+                <span class="redirect-button" style="text-decoration: underline;font-weight:bold;cursor:pointer;">Click here</span> to proceed.</p>
+                <!-- create a condition if password is not the default password -->
+            </div>
             <?php if (empty($notifications)): ?>
                 <div id="notif"><h3>No Notifications</h3><p>There are no upcoming or overdue payments.</p></div>
             <?php else: ?>
@@ -313,6 +319,7 @@ $conn->close();
 
     <script src="../js/common-functions.js"></script>
     <script src="../js/routing-student.js"></script>
+    <script src="../js/to-change-password.js"></script>
     <script>
         // Function to calculate and update the total amount
         function updateTotalAmount() {
