@@ -53,18 +53,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['reset_password'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-        background-image: url('assets/images/background.png'); 
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-        height: 100vh; 
-        margin: 0; 
-        }
-    </style>
+
 </head>
-<body>
+<body style="background-image: url('assets/images/background.png');">
     <div class="forgot-container">
         <div id="left">
             <img src="assets/images/oakwood.jpg" alt="Oakwood" id="logo">
@@ -73,11 +64,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['reset_password'])) {
             <h2>Reset Password</h2>
             <?php if (isset($error)) echo "<p style='color:red;'>{$error}</p>"; ?>
             <form method="POST" action="reset_password.php">
-                <input type="password" name="new_password" placeholder="New Password" required>
-                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <input class="input" type="password" name="new_password" placeholder="New Password" required>
+                <input class="input" type="password" name="confirm_password" placeholder="Confirm Password" required>
                 <button type="submit" name="reset_password">Reset Password</button>
             </form>
         </div>
     </div>
+    <script src="js/noEmoji.js"></script>
 </body>
 </html>
