@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['send_otp'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forgot Password - OASIS</title>
+    <title>Change Password - OASIS</title>
     <link rel="stylesheet" href="css/forgot_password.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['send_otp'])) {
         </div>
 
         <div id="right">
-            <h2>Forgot Password</h2>
+            <h2>Change Password</h2>
             <?php if (isset($error)) echo "<p style='color:red;'>{$error}</p>"; ?>
             <form method="POST" action="forgot_password.php">
                 <input class="input" type="text" name="username" placeholder="Enter Username" required>
